@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <script type="module" src="/src/main.ts"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Inventory</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">Book Inventory</h1>
+  
+      <section class="newBookEntry">
+        <h2 class="offscreen">Add New Book</h2>
+        <form class="newBookEntry__form" id="bookEntryForm">
+          <label for="newBookTitle" class="offscreen">Enter title</label>
+          <input class="newBookEntry__input" id="newBookTitle" type="text" maxlength="100" autocomplete="off"
+            placeholder="Add title" />
+            <label for="newBookAuthor" class="offscreen">Enter author</label>
+          <input class="newBookEntry__input" id="newBookAuthor" type="text" maxlength="100" autocomplete="off"
+            placeholder="Add Author" />
+          <button id="addBook" class="button newBookEntry__button" title="Add new book" aria-label="Add new book to list">
+            +
+          </button>
+        </form>
+      </section>
+  
+      <section class="listContainer">
+        <header class="listTitle">
+          <h2 id="listName">Book List</h2>
+          <div>
+          <!-- <button id="clearBooksButton" class="button listTitle__button" title="Clear the list"
+            aria-label="Remove all books from the list">
+            
+          </button> -->
+      
+        </div>
+        </header>
+        
+        <table id="bookTable">
+
+        </table>
+
+        <ul id="bookListItems">
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
